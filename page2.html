@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réserver la salle de réunion — La Fourmilière</title>
+  <meta name="description" content="Réservez la salle de réunion de La Fourmilière. Jusqu'à 10 personnes, écran 65 pouces, fibre optique. À l'heure ou à la journée." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header id="header">
+  <div class="container">
+    <div class="header-inner">
+
+      <a href="index.html" class="logo">
+        <div class="logo-rond">LF</div>
+        La <span>&nbsp;Fourmilière</span>
+      </a>
+
+      <nav>
+        <a href="index.html#localisation">Nous découvrir</a>
+        <a href="index.html#espaces">Nos espaces</a>
+        <a href="index.html#temoignages">Avis</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="index.html#contact" class="btn btn-contour btn-sm">Nous contacter</a>
+        <a href="page2.html" class="btn btn-jaune btn-sm">Réserver →</a>
+      </div>
+
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="menu-mobile">
+  <a href="index.html#localisation">Nous découvrir</a>
+  <a href="index.html#espaces">Nos espaces</a>
+  <a href="index.html#temoignages">Avis</a>
+  <a href="index.html#contact">Contact</a>
+</nav>
+
+
+<!-- ========== HERO PAGE ========== -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner">
+      <div>
+        <nav class="breadcrumb">
+          <a href="index.html">Accueil</a>
+          <span>›</span>
+          <span style="color:var(--yellow)">Réserver la salle de réunion</span>
+        </nav>
+        <p class="label-section">Réservation en ligne</p>
+        <h1 class="page-titre">Réservez votre<br /><span>salle de réunion</span></h1>
+        <p class="page-desc">Accueillez vos clients ou réunissez votre équipe dans un cadre professionnel. Réservation simple, confirmation immédiate.</p>
+      </div>
+      <!-- 📸 photos/reunion.jpg -->
+      <img src="photos/reunion.jpg" alt="Salle de réunion La Fourmilière" class="page-hero-img" loading="eager" />
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== ÉQUIPEMENTS ========== -->
+<section class="equipements">
+  <div class="container">
+    <div class="equip-grille">
+      <div class="equip-item">
+        <div class="equip-icone">📺</div>
+        <div>
+          <strong>Écran interactif 65"</strong>
+          <p>HDMI & Wi-Fi</p>
+        </div>
+      </div>
+      <div class="equip-item">
+        <div class="equip-icone">👥</div>
+        <div>
+          <strong>Jusqu'à 10 personnes</strong>
+          <p>Table modulable</p>
+        </div>
+      </div>
+      <div class="equip-item">
+        <div class="equip-icone">📶</div>
+        <div>
+          <strong>Fibre très haut débit</strong>
+          <p>Wi-Fi dédié sécurisé</p>
+        </div>
+      </div>
+      <div class="equip-item">
+        <div class="equip-icone">🎥</div>
+        <div>
+          <strong>Visioconférence</strong>
+          <p>Zoom, Teams, Meet</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== RÉSERVATION ========== -->
+<section id="reservation">
+  <div class="container">
+    <div class="resa-layout">
+
+      <!-- FORMULAIRE -->
+      <div>
+        <div class="resa-form-box" id="resaFormBox">
+          <h2 class="resa-titre">Votre réservation</h2>
+          <p class="resa-sous-titre">Remplissez les informations. Confirmation par e-mail immédiate.</p>
+
+          <!-- Étapes -->
+          <div class="etapes">
+            <div class="etape active">
+              <div class="etape-num">1</div>
+              <div class="etape-label">Date & Durée</div>
+            </div>
+            <div class="etape">
+              <div class="etape-num">2</div>
+              <div class="etape-label">Vos infos</div>
+            </div>
+            <div class="etape">
+              <div class="etape-num">3</div>
+              <div class="etape-label">Confirmation</div>
+            </div>
+          </div>
+
+          <!-- PANNEAU 1 : Date & Durée -->
+          <div class="panneau actif" id="panneau1">
+            <h3 class="sous-titre-etape">Choisissez votre créneau</h3>
+
+            <div class="form-double" style="margin-bottom:1rem">
+              <div class="form-groupe">
+                <label for="resaDate">Date *</label>
+                <input type="date" id="resaDate" required />
+              </div>
+              <div class="form-groupe" style="grid-column:span 1"></div>
+            </div>
+            <div class="form-double" style="margin-bottom:1.5rem">
+              <div class="form-groupe">
+                <label for="resaDebut">Heure de début</label>
+                <input type="time" id="resaDebut" min="08:00" max="19:00" step="1800" value="09:00" />
+              </div>
+              <div class="form-groupe">
+                <label for="resaFin">Heure de fin</label>
+                <input type="time" id="resaFin" min="08:30" max="20:00" step="1800" value="11:00" />
+              </div>
+            </div>
+
+            <h3 class="sous-titre-etape">Ou choisissez une durée prédéfinie</h3>
+            <div class="durees">
+              <button class="duree-btn" data-heures="1" type="button"><strong>1h</strong><span>25€</span></button>
+              <button class="duree-btn" data-heures="2" type="button"><strong>2h</strong><span>50€</span></button>
+              <button class="duree-btn selectionne" data-heures="3" type="button"><strong>3h</strong><span>75€</span></button>
+              <button class="duree-btn" data-heures="4" type="button"><strong>½ journée</strong><span>100€</span></button>
+              <button class="duree-btn" data-heures="7" type="button"><strong>Journée</strong><span>175€</span></button>
+              <button class="duree-btn" data-heures="0" type="button"><strong>Perso</strong><span>Saisie libre</span></button>
+            </div>
+
+            <h3 class="sous-titre-etape" style="margin-top:1.5rem">Nombre de participants</h3>
+            <div class="personnes-sel">
+              <button class="pers-btn" id="moinsPersonnes" type="button">−</button>
+              <div class="pers-nb" id="nbPersonnes">4</div>
+              <button class="pers-btn" id="plusPersonnes" type="button">+</button>
+              <span style="font-size:.8rem;color:var(--gray);margin-left:.5rem">/ 10 max</span>
+            </div>
+
+            <div class="nav-form">
+              <div></div>
+              <button class="btn btn-jaune" data-suivant type="button">Continuer → Mes informations</button>
+            </div>
+          </div>
+
+          <!-- PANNEAU 2 : Infos & Options -->
+          <div class="panneau" id="panneau2">
+            <h3 class="sous-titre-etape">Vos coordonnées</h3>
+
+            <div class="form-double">
+              <div class="form-groupe">
+                <label for="resaPrenom">Prénom *</label>
+                <input type="text" id="resaPrenom" required placeholder="Jean" />
+              </div>
+              <div class="form-groupe">
+                <label for="resaNom">Nom</label>
+                <input type="text" id="resaNom" placeholder="Dupont" />
+              </div>
+            </div>
+            <div class="form-double">
+              <div class="form-groupe">
+                <label for="resaEmail">E-mail *</label>
+                <input type="email" id="resaEmail" required placeholder="jean@email.com" />
+              </div>
+              <div class="form-groupe">
+                <label for="resaTel">Téléphone</label>
+                <input type="tel" id="resaTel" placeholder="+33 6 XX XX XX XX" />
+              </div>
+            </div>
+            <div class="form-groupe">
+              <label for="resaSociete">Société</label>
+              <input type="text" id="resaSociete" placeholder="Nom de votre entreprise" />
+            </div>
+            <div class="form-groupe">
+              <label for="resaMotif">Motif de la réunion</label>
+              <select id="resaMotif">
+                <option value="" disabled selected>Choisissez</option>
+                <option>Réunion d'équipe</option>
+                <option>Rendez-vous client</option>
+                <option>Formation / atelier</option>
+                <option>Entretien RH</option>
+                <option>Présentation / pitch</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="form-groupe">
+              <label for="resaCommentaire">Commentaire</label>
+              <textarea id="resaCommentaire" rows="3" placeholder="Agencement particulier, accessibilité PMR…"></textarea>
+            </div>
+
+            <h3 class="sous-titre-etape" style="margin-top:1.5rem">Options supplémentaires</h3>
+            <div class="extras">
+              <div class="extra">
+                <input type="checkbox" id="xCafe" value="cafe" />
+                <label for="xCafe"><span>☕</span> Café & boissons <span class="extra-prix">+10€</span></label>
+              </div>
+              <div class="extra">
+                <input type="checkbox" id="xParking" value="parking" />
+                <label for="xParking"><span>🚗</span> Parking visiteurs <span class="extra-prix">Gratuit</span></label>
+              </div>
+              <div class="extra">
+                <input type="checkbox" id="xVisio" value="visio" />
+                <label for="xVisio"><span>🎥</span> Kit visioconférence <span class="extra-prix">+15€</span></label>
+              </div>
+              <div class="extra">
+                <input type="checkbox" id="xRepas" value="repas" />
+                <label for="xRepas"><span>🍱</span> Plateau repas <span class="extra-prix">+18€/pers.</span></label>
+              </div>
+            </div>
+
+            <div class="nav-form">
+              <button class="btn-retour" data-precedent type="button">← Retour</button>
+              <button class="btn btn-jaune" data-suivant type="button">Vérifier ma réservation →</button>
+            </div>
+          </div>
+
+          <!-- PANNEAU 3 : Confirmation -->
+          <div class="panneau" id="panneau3">
+            <h3 class="sous-titre-etape">Vérifiez votre réservation</h3>
+
+            <div style="background:var(--light);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;font-size:.87rem;display:flex;flex-direction:column;gap:.6rem;">
+              <div>🗓️ <strong id="confirmDate">—</strong></div>
+              <div>⏱️ <strong id="confirmDuree">—</strong></div>
+              <div>👥 <strong id="confirmPersonnes">—</strong></div>
+              <div>📧 <strong id="confirmEmail">—</strong></div>
+            </div>
+
+            <div style="background:rgba(255,213,0,.08);border:1.5px solid rgba(255,213,0,.3);border-radius:8px;padding:1.25rem;margin-bottom:1.5rem;font-size:.82rem;color:var(--dark);">
+              ✅ Confirmation par e-mail immédiate. Paiement sur place ou par virement.
+            </div>
+
+            <div class="nav-form">
+              <button class="btn-retour" data-precedent type="button">← Modifier</button>
+              <button class="btn btn-jaune" id="btnConfirmer" type="button">Confirmer la réservation ✓</button>
+            </div>
+          </div>
+
+        </div><!-- /resa-form-box -->
+
+        <!-- Message confirmation -->
+        <div class="confirmation" id="confirmation">
+          <div class="confirm-icone">✓</div>
+          <h2 class="confirm-titre">Réservation confirmée !</h2>
+          <p class="confirm-desc">Merci ! Un e-mail de confirmation vous a été envoyé. Notre équipe vous contactera si besoin. À bientôt à La Fourmilière !</p>
+          <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+            <a href="index.html" class="btn btn-sombre">← Retour à l'accueil</a>
+            <a href="index.html#contact" class="btn btn-jaune">Nous contacter</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RÉCAP SIDEBAR -->
+      <aside class="recap">
+        <h2 class="recap-titre">Récapitulatif</h2>
+        <!-- 📸 photos/reunion.jpg -->
+        <img src="photos/reunion.jpg" alt="Salle de réunion La Fourmilière" loading="lazy" />
+        <div class="recap-ligne">
+          <span class="etiq">Espace</span>
+          <span class="val">Salle de réunion principale</span>
+        </div>
+        <div class="recap-ligne">
+          <span class="etiq">Capacité</span>
+          <span class="val">Jusqu'à 10 personnes</span>
+        </div>
+        <div class="recap-ligne">
+          <span class="etiq">Tarif</span>
+          <span class="val">25€ / heure</span>
+        </div>
+        <hr class="recap-sep" />
+        <div class="recap-ligne">
+          <span class="etiq">Date</span>
+          <span class="val" id="recapDate">—</span>
+        </div>
+        <div class="recap-ligne">
+          <span class="etiq">Durée</span>
+          <span class="val" id="recapDuree">3h</span>
+        </div>
+        <div class="recap-ligne">
+          <span class="etiq">Participants</span>
+          <span class="val" id="recapPersonnes">4 pers.</span>
+        </div>
+        <hr class="recap-sep" />
+        <div id="recapExtras"></div>
+        <hr class="recap-sep" />
+        <div class="recap-total">
+          <span class="recap-total-label">Total estimé</span>
+          <span class="recap-total-prix" id="recapTotal">75€ <small>HT</small></span>
+        </div>
+        <p class="recap-note">💡 Annulation gratuite jusqu'à 24h avant. Paiement sur place ou par virement.</p>
+        <div style="margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(50,37,34,.08)">
+          <a href="tel:+33XXXXXXXXX" class="btn btn-sombre btn-sm" style="width:100%;justify-content:center">📞 Nous appeler</a>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== FOOTER ========== -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grille">
+      <div class="footer-marque">
+        <div class="logo">
+          <div class="logo-rond">LF</div>
+          La <span>&nbsp;Fourmilière</span>
+        </div>
+        <p>Espaces de coworking, bureaux et salles de réunion à Bouguenais — 10 min de Nantes.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Nos espaces</h4>
+        <ul>
+          <li><a href="index.html#espaces">Coworking</a></li>
+          <li><a href="index.html#espaces">Bureaux privatifs</a></li>
+          <li><a href="page2.html">Salle de réunion</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#localisation">Nous trouver</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Légal</h4>
+        <ul>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">CGV</a></li>
+          <li><a href="#">Confidentialité</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bas">
+      <p>© <span class="annee"></span> La Fourmilière — Tous droits réservés</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
